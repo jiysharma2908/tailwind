@@ -1,0 +1,13 @@
+JUSTIFY CONTENT :
+-flex-start
+-flex-end
+-center
+-space-between
+-space-around
+-space-evenly
+
+ALIGN-ITEMS:
+-flex-start
+-flex-end
+-center
+-stretch
