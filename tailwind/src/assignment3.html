@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulTravel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-5 bg-white shadow-md">
+        <div class="text-blue-700 text-2xl font-bold">SOULTRAVEL.</div>
+        <ul class="hidden md:flex space-x-8 text-gray-700">
+            <li><a href="#" class="hover:text-blue-700">Package</a></li>
+            <li><a href="#" class="hover:text-blue-700">Destination</a></li>
+            <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+            <li><a href="#" class="hover:text-blue-700">About Us</a></li>
+            <li><a href="#" class="hover:text-blue-700">Contact</a></li>
+        </ul>
+        <div class="space-x-4 hidden md:flex">
+            <button class="text-gray-700 hover:text-orange-600">Sign Up</button>
+            <button class="text-white bg-blue-700 px-4 py-2 rounded hover:bg-orange-700">Sign In</button>
+        </div>
+        <div class="md:hidden">
+            <button class="text-gray-700">Menu</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-orange-50 py-12 px-5 md:px-20">
+        <div class="flex flex-col-reverse md:flex-row items-center md:space-x-10">
+            <!-- Text Content -->
+            <div class="text-center md:text-left space-y-6 max-w-lg">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800">
+                    LET'S GO!
+                    <span class="text-blue-700">THE ADVENTURE</span>
+                    IS WAITING FOR YOU
+                </h1>
+                <p class="text-gray-600 text-lg">
+                    Embark on your journey today and discover uncharted wonders around the world. Your adventure awaits with exciting experiences, unforgettable memories, and endless opportunities.
+                </p>
+            </div>
+
+            <!-- Image Content -->
+            <div class="relative">
+                <img 
+                src="p.jpg" 
+                alt="Traveler" 
+                class="rounded-full shadow-lg"
+            >
+                <!-- Floating Buttons -->
+                <div class="absolute top-6 left-6 bg-white shadow-lg p-3 rounded-full text-blue-700 font-bold">Hotel Booking</div>
+                <div class="absolute top-24 right-6 bg-white shadow-lg p-3 rounded-full text-blue-700 font-bold">Flight Tickets</div>
+                <div class="absolute bottom-10 left-6 bg-white shadow-lg p-3 rounded-full text-blue-700 font-bold">Local Events</div>
+                <div class="absolute bottom-10 right-6 bg-white shadow-lg p-3 rounded-full text-blue-700 font-bold">Tour Guide</div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <div class="flex-1">
+                <label for="destination" class="block text-gray-700 font-medium">Destination</label>
+                <input 
+                    type="text" 
+                    id="destination" 
+                    class="w-full border border-gray-300 rounded px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-orange-600"
+                    placeholder="India"
+                >
+            </div>
+            <div class="flex-1">
+                <label for="date" class="block text-gray-700 font-medium">Date</label>
+                <input 
+                    type="" 
+                    id="date" 
+                    class="w-full border border-gray-300 rounded px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-orange-600"
+                >
+            </div>
+            <div class="flex-shrink-0">
+                <button class="w-full bg-blue-700 text-white px-6 py-2 rounded hover:bg-orange-700 mt-6 md:mt-0">
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
